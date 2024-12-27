@@ -1,0 +1,31 @@
+.card {
+    border-radius: 8px;
+    /* Kart köşelerini yuvarla */
+    overflow: hidden;
+    /* Görsellerin dışına taşmasını engelle */
+    position: relative;
+    /* Overlay için gerekli */
+}
+
+
+
+.card-overlay {
+    position: absolute;
+    /* Yazıyı görselin üstüne yerleştir */
+    bottom: 0;
+    /* Görselin en altına yerleştir */
+    width: 100%;
+    /* Görselin genişliğini kapla */
+    background: rgba(255, 255, 255, 0.5);
+    /* Yarı saydam bir arka plan */
+    color: black;
+    /* Yazıyı beyaz yap */
+    text-align: center;
+    /* Yazıyı ortala */
+    padding: 10px 0;
+    /* Üst-alt boşluk */
+    font-weight: bold;
+    /* Kalın yazı */
+    font-size: 16px;
+    /* Yazı boyutu */
+}

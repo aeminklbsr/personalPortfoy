@@ -1,0 +1,96 @@
+/* Genel Ayarlar */
+html, body {
+    height: 100%; /* Sayfanın tam yüksekliğini kapsa */
+    margin: 0; /* Varsayılan boşlukları kaldır */
+}
+
+.background-overlay {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Sayfa yüksekliğini tam olarak kaplar */
+    padding-top: 90px; /* Navbar'ın yüksekliğini hesaba kat */
+}
+
+/* Navbar */
+.navbar {
+    position: fixed; /* Navbar'ı sabitle */
+    top: 0; /* Üst kısma sabitle */
+    left: 0; /* Sol kısma hizala */
+    width: 100%; /* Tam genişlik kapla */
+    z-index: 10; /* Üstte kalması için katman önceliği */
+    height: 90px; /* Mevcut yüksekliği koru */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Hafif gölge ekleme */
+    background-color: rgba(255, 255, 255, 0.9); /* Hafif şeffaf arka plan */
+    transition: background-color 0.3s ease; /* Geçiş efekti */
+    
+}
+
+.navbar-toggler {
+    background-color: white; /* Toggler butonunun arka plan rengini beyaz yap */
+}
+
+/* Navbar Linkler */
+.navbar-nav .nav-item {
+    position: relative; /* Çizgi konumlandırması için gerekli */
+}
+
+.navbar-nav .nav-link {
+    color: #1d1f21; /* Varsayılan yazı rengi siyah */
+    font-weight: bold; /* Kalın yazı */
+    margin: 5px 10px; /* Elemanlar arasında boşluk */
+    transition: color 0.3s ease; /* Hover efekti için geçiş süresi */
+}
+
+.navbar-nav .nav-link:hover {
+    color: red; /* Hover sırasında yazı rengi kırmızı */
+    text-decoration: none; /* Alt çizgiyi kaldır */
+}
+
+/* Navbar Başlıklar Arası Dikey Çizgi */
+.navbar-nav .nav-item:not(:last-child)::after {
+    content: ""; /* Çizgiyi oluşturmak için boş içerik */
+    position: absolute; /* Konumlandırmayı etkinleştir */
+    right: 0px; /* Çizgiyi başlığın sağ kenarına hizala */
+    top: 50%; /* Çizgiyi dikey olarak ortala */
+    transform: translateY(-50%); /* Dikey ortalamayı tamamla */
+    height: 80%; /* Çizginin uzunluğu (başlık boyunun %50'si) */
+    width: 1px; /* Çizginin kalınlığı */
+    background-color: #4c4c4c; /* Çizginin rengi (siyah) */
+    opacity: 0.5; /* Hafif şeffaflık için */
+}
+
+/* Footer */
+.footer {
+    background-color: #1d1f21; /* Footer arka plan rengi */
+    color: white; /* Footer yazı rengi */
+    text-align: center; /* Ortala */
+    padding: 1.5rem 0; /* İçerik için boşluk */
+    margin-top: auto; /* Footer'ı sayfanın altına iter */
+}
+
+.footer-link {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Hover geçiş efekti */
+}
+
+.footer-link:hover {
+    color: #a42526;
+}
+
+/* Sosyal Medya İkonları */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* İkonlar arasındaki boşluk */
+}
+
+.social-icons .social-link {
+    color: #ffffff;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons .social-link:hover {
+    color: #a42526;
+}

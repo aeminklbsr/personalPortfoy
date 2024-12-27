@@ -1,0 +1,9 @@
+:host {
+    display: block;
+    background-color: #F0F0F0;
+    background-size: cover; /* Görselin genişlik ve yüksekliğe uyumlu şekilde ölçeklenmesi */
+    background-repeat: no-repeat; /* Görselin tekrar etmesini engelle */
+    background-position: center; /* Görseli yatay ve dikeyde merkezle */
+    min-height: 100vh; /* Görselin yüksekliği tam ekran */
+    width: 100%; /* Genişliği ekranın tamamını kapla */
+}
