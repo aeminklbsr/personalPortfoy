@@ -1,10 +1,77 @@
-<div class="container mt-4">
-  <div class="row g-4">
-    <div class="card shadow-sm border-0 position-relative">
-      <h1>
-        Hakkımda
-      </h1>
-      <p></p>
+<div *ngIf="personelInfo">
+  <div class="about-container">
+    <h1 class="about-title">Hakkımda</h1>
+    <div class="about-content">
+      <!-- Görsel -->
+      <img src="/assets/images/emin2.jpeg" alt="Ahmet Emin Kolbasar" class="about-image">
+      <!-- Bio Bölümü -->
+      <p class="about-bio">{{ personelInfo.bio }}</p>
+    </div>
+  </div>
+
+  <div class="skills-container">
+    <h1 class="skills-title">Yeteneklerim</h1>
+    <!-- Languages -->
+    <div class="skills-section">
+      <h3>Languages</h3>
+      <div *ngFor="let language of personelInfo.Languages" class="mb-3">
+        <p>{{ language.name }}</p>
+        <div class="progress" role="progressbar" [attr.aria-label]="'Proficiency in ' + language.name"
+          [attr.aria-valuenow]="language.level" [attr.aria-valuemin]="0" [attr.aria-valuemax]="100">
+          <div class="progress-bar bg-success" [style.width.%]="language.level">
+            {{ language.level }}%
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Frameworks/Libraries -->
+    <div class="skills-section">
+      <h3>Frameworks/Libraries</h3>
+      <div *ngFor="let framework of personelInfo.Frameworks" class="mb-3">
+        <p>{{ framework.name }}</p>
+        <div class="progress" role="progressbar" [attr.aria-label]="'Proficiency in ' + framework.name"
+          [attr.aria-valuenow]="framework.level" [attr.aria-valuemin]="0" [attr.aria-valuemax]="100">
+          <div class="progress-bar bg-primary" [style.width.%]="framework.level">
+            {{ framework.level }}%
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tools -->
+    <div class="skills-section">
+      <h3>Tools</h3>
+      <div *ngFor="let tool of personelInfo.Tools" class="mb-3">
+        <p>{{ tool.name }}</p>
+        <div class="progress" role="progressbar" [attr.aria-label]="'Proficiency in ' + tool.name"
+          [attr.aria-valuenow]="tool.level" [attr.aria-valuemin]="0" [attr.aria-valuemax]="100">
+          <div class="progress-bar bg-info" [style.width.%]="tool.level">
+            {{ tool.level }}%
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Work Experience -->
+  <div class="timeline-container">
+    <h1 class="timeline-title">Deneyimlerim</h1>
+    <div class="timeline">
+      <div *ngFor="let experience of personelInfo.workexperience" class="timeline-item">
+        <!-- Sol taraf -->
+        <div class="timeline-left">
+          <h3>{{ experience.company }}</h3>
+          <a href="#" target="_blank">{{ experience.website || '' }}</a>
+        </div>
+        <!-- Çizgi ve Daire -->
+        <div class="timeline-line"></div>
+        <!-- Sağ taraf -->
+        <div class="timeline-right">
+          <h4>{{ experience.title }}</h4>
+          <p>{{ experience.comment }}</p>
+        </div>
+      </div>
     </div>
   </div>
 </div>

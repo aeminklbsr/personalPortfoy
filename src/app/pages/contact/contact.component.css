@@ -1,0 +1,116 @@
+/* Ana Kapsayıcı */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+.contact-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.contact-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #007bff;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* İçerik Yerleşimi */
+.contact-content {
+  display: flex;
+  justify-content: center; /* Tüm içeriği yatayda ortalar */
+  align-items: center; /* İçeriği dikeyde ortalar */
+  gap: 20px; /* Form ve iletişim bilgileri arasındaki boşluk */
+  width: 100%;
+  max-width: 1200px;
+  flex-wrap: wrap; /* Küçük ekranlar için alt alta */
+}
+
+/* İletişim Formu */
+.form-container {
+  background-color: white;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  resize: none;
+}
+
+.form-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+  background-color: #0056b3;
+}
+
+/* İletişim Bilgileri */
+.contact-items {
+  background-color: white;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.contact-item img {
+  width: 40px;
+  height: 40px;
+}
+
+.contact-item p {
+  margin: 0;
+  font-size: 16px;
+  color: #555;
+}

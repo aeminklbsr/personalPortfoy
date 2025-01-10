@@ -12,8 +12,15 @@ export class GithubService {
 
 constructor(private http: HttpClient) { }
 
+// Tüm projeleri almak için mevcut metod
 getProjectData(): Observable<Github[]> {
-  return this.http.get<Github[]>(githubApi.getProjectApi);
+  return this.http.get<Github[]>('https://api.github.com/users/aeminklbsr/repos');
+}
+
+// Belirli bir projenin README.md dosyasını almak için yeni metot
+getReadmeContent(repoName: string): Observable<any> {
+  const url = `https://api.github.com/repos/aeminklbsr/${repoName}/contents/README.md`;
+  return this.http.get<any>(url);
 }
 
 }

@@ -1,3 +1,29 @@
-<p>
-  home works!
-</p>
+<div class="photo-gallery">
+  <!-- İlk Kategori -->
+  <div class="category">
+    <h2>To Do Otomasyonu</h2>
+    <div class="thumbnail-container">
+      <div class="thumbnail" *ngFor="let photo of folderOnePhotos; let i = index" (click)="openModal(photo, 'folderOne', i)">
+        <img [src]="photo" alt="To Do Fotoğrafı" />
+      </div>
+    </div>
+  </div>
+
+  <!-- İkinci Kategori -->
+  <div class="category">
+    <h2>Hastane Randevu Otomasyonu</h2>
+    <div class="thumbnail-container">
+      <div class="thumbnail" *ngFor="let photo of folderTwoPhotos; let i = index" (click)="openModal(photo, 'folderTwo', i)">
+        <img [src]="photo" alt="Hastane Randevu Fotoğrafı" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal" [class.active]="isModalOpen">
+  <span class="close" (click)="closeModal()">&times;</span>
+  <button class="prev" (click)="changeSlide(-1)">&larr;</button>
+  <img [src]="currentImage" alt="Full Image" />
+  <button class="next" (click)="changeSlide(1)">&rarr;</button>
+</div>

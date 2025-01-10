@@ -29,3 +29,345 @@
     font-size: 16px;
     /* Yazı boyutu */
 }
+
+/* Progress Bar Stil */
+.progress {
+    height: 20px;
+    /* Progress bar'ın yüksekliği */
+    width: 100%;
+    /* Varsayılan olarak tam genişlik */
+    max-width: 300px;
+    /* Maksimum genişlik */
+    background-color: #e9ecef;
+    /* Arka plan rengi */
+    border-radius: 10px;
+    /* Kenarları yuvarla */
+    overflow: hidden;
+    /* Kenar taşmasını gizle */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    /* Hafif gölge efekti */
+}
+
+.progress-bar {
+    height: 100%;
+    /* Progress bar'ın tam yüksekliğini kullan */
+    line-height: 25px;
+    /* Yükseklikle hizalamak için */
+    font-size: 14px;
+    /* Yazı boyutu */
+    font-weight: bold;
+    /* Kalın yazı */
+    background-color: #28a745;
+    /* Varsayılan arka plan rengi */
+    transition: width 0.6s ease;
+    /* Genişlik değişiminde geçiş efekti */
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    /* İçeriği yatayda ortala */
+    flex-wrap: wrap;
+    /* Küçük ekranlarda satır kaydırma */
+    gap: 20px;
+    /* Bölümler arasında boşluk */
+    padding: 20px;
+}
+
+.skills-title {
+    width: 100%;
+    /* Başlığın tüm genişliği kaplamasını sağlar */
+    text-align: center;
+    /* Başlığı yatayda ortalar */
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    /* Alt boşluk */
+    color: #333;
+    position: relative;
+}
+
+/* Altındaki çizgiyi hizalamak */
+.skills-title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    /* Çizginin genişliği */
+    height: 4px;
+    /* Çizginin kalınlığı */
+    background-color: #007bff;
+    /* Çizgi rengi */
+    margin: 10px auto 0;
+    /* Çizgiyi ortalamak için */
+    border-radius: 2px;
+    /* Köşeleri yuvarlat */
+}
+
+.skills-section {
+    flex: 1;
+    /* Her bölüm eşit genişlik alır */
+    min-width: 300px;
+    /* Bölümlerin minimum genişliği */
+    max-width: 400px;
+    /* Bölümlerin maksimum genişliği */
+    padding: 20px;
+    /* Bölümlerin iç boşluğu */
+
+}
+
+
+.progress-bar {
+    height: 100%;
+    line-height: 20px;
+    /* Progress bar metnini dikey ortala */
+    font-weight: bold;
+}
+
+
+/* Başlık */
+.timeline-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+    position: relative;
+}
+
+.timeline-title::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #007bff;
+    margin: 10px auto 0;
+}
+
+/* Timeline Konteyner */
+.timeline-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Timeline */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+/* Sol Bölüm */
+.timeline-left {
+    flex: 1;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.timeline-left h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.timeline-left a {
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.timeline-left a:hover {
+    text-decoration: underline;
+}
+
+/* Orta Çizgi */
+.timeline-line {
+    width: 10px;
+    height: 10px;
+    background-color: #007bff;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin: 0 15px;
+    position: relative;
+}
+
+.timeline-line::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: #007bff;
+    z-index: -1;
+}
+
+/* Sağ Bölüm */
+.timeline-right {
+    flex: 1;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.timeline-right h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.timeline-right p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666;
+}
+
+/* Responsive Ayarlar */
+@media screen and (max-width: 768px) {
+    .timeline-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .timeline-left,
+    .timeline-right {
+        text-align: center;
+        padding: 0;
+    }
+
+    .timeline-line {
+        margin: 20px auto;
+    }
+}
+
+/* Hakkımda Konteyner */
+.about-container {
+    max-width: 1000px;
+    margin: 50px auto;
+    /* Ortada hizalama */
+    padding: 20px;
+}
+
+/* Başlık */
+.about-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.about-title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #007bff;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* İçerik */
+.about-content {
+    display: flex;
+    align-items: center;
+    /* Dikey hizalama */
+    gap: 20px;
+    /* Resim ve yazı arasında boşluk */
+}
+
+/* Görsel */
+.about-image {
+    width: 300px;
+    /* Görsel genişliği */
+    height: 300px;
+    /* Görsel yüksekliği */
+    object-fit: cover;
+    /* Görselin düzgün şekilde sığmasını sağlar */
+    border-radius: 10px;
+
+}
+
+/* Bio Metni */
+.about-bio {
+    font-size: 16px;
+    line-height: 1.8;
+    /* Satır yüksekliği */
+    color: #555;
+    /* Metin rengi */
+    text-align: justify;
+    /* Metni iki yana yasla */
+}
+
+/* Genel Medya Sorguları */
+@media (max-width: 1200px) {
+    .skills-section {
+        max-width: 400px;
+    }
+
+    .timeline-container {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .timeline {
+        gap: 10px;
+    }
+
+    .skills-title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-image {
+        width: 80%;
+        height: auto;
+    }
+
+    .timeline-container {
+        padding: 10px;
+    }
+
+    .skills-section {
+        max-width: 350px;
+    }
+
+    .timeline-title {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-title {
+        font-size: 24px;
+    }
+
+    .skills-title {
+        font-size: 20px;
+    }
+
+    .timeline-title {
+        font-size: 20px;
+    }
+
+    .progress {
+        max-width: 100%;
+    }
+
+    .skills-section {
+        padding: 10px;
+    }
+}

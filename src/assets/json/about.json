@@ -1,0 +1,88 @@
+{
+  "name": "Ahmet Emin Kolbasar",
+  "age": 25,
+  "profession": "Software Developer",
+  "Languages": [
+    {
+      "name": "JavaScript",
+      "level": 50
+    },
+    {
+      "name": "TypeScript",
+      "level": 50
+    },
+    {
+      "name": "Python",
+      "level": 60
+    },
+    {
+      "name": "SQL",
+      "level": 30
+    },
+    {
+      "name": "HTML",
+      "level": 80
+    },
+    {
+      "name": "CSS",
+      "level": 60
+    }
+  ],
+  "Frameworks": [
+    {
+      "name": "Angular.js",
+      "level": 50
+    },
+    {
+      "name": "React.js",
+      "level": 50
+    },
+    {
+      "name": "Node.js",
+      "level": 40
+    },
+    {
+      "name": "Express.js",
+      "level": 30
+    },
+    {
+      "name": "React-Native",
+      "level": 50
+    }
+  ],
+  "Tools": [
+    {
+      "name": "Git",
+      "level": 60
+    }
+  ],
+  "bio": "Ben Ahmet Emin Kolbasar, 17 Nisan 2001 tarihinde İstanbul Fatih'te doğdum ve halen burada yaşıyorum. İlkokul eğitimimi Asfa Koleji'nde, ortaokul eğitimimi ise Okyanus Koleji'nde tamamladım. Lise öğrenimimi tamamladıktan sonra İstanbul Atlas Üniversitesi Bilgisayar Mühendisliği bölümünü kazandım ve 2024 yılında mezun oldum.  Şu anda İstanbul Atlas Üniversitesi Bilgi İşlem Departmanında çalışıyor, uzaktan eğitim sistemine teknik destek sağlıyorum. Bunun yanı sıra ön uç geliştirme alanında kendimi geliştirmeye devam ediyorum ve Angular kullanarak projeler üretiyorum. Üniversite yıllarımda React ve React Native üzerinde çalışarak deneyim kazandım. Ayrıca Python kullanarak yapay zeka alanında çeşitli projeler gerçekleştirdim. Kariyerimde özellikle ön uç geliştirme ve yapay zeka konularında uzmanlaşmayı hedefliyorum. ",
+  "workexperience": [
+    {
+      "title": "Ağ ve Güvenlik Stajyeri",
+      "company": "Exclusive Network",
+      "comment": "CentOS işletim sistemi üzerinde MySQL ve PostgreSQL veritabanlarını yönettim ve optimize ettim. Güvenlik işlemleri sağlamak için ağ ayarlarını yapılandırdım ve güvenlik protokollerini uyguladım."
+    },
+    {
+      "title": "Elektronik ve Gömülü Sistemler Stajyeri",
+      "company": "MipMap Technology",
+      "comment": "Donanım alanında deneyim kazandım. Devam eden bir projede Arduino ve sensörleri ile çalıştım. Ayrıca, aynı proje kapsamında çeşitli fikirler üreterek projeye katkıda bulundum."
+    },
+    {
+      "title": "LMS Destek Uzman Yardımcısı",
+      "company": "İstanbul Atlas Üniversitesi",
+      "comment": "Öğrenci ve öğretmenlere teknik destek sağlıyorum. Sistemde karşılaşılan sorunların giderilmesi için ilgili firma ile iletişim kuruyorum. Kullanıcı ihtiyaçlarına yönelik çözüm önerileri sunuyorum ve sistemin sorunsuz çalışmasını sağlamak için gerekli kontrolleri yapıyorum."
+    }
+  ],
+  "contact": [
+    {
+      "email": "aeminkolbasar@gmail.com",
+      "instagram": "https://www.instagram.com/aeminklbsr/",
+      "linkedin": "https://www.linkedin.com/in/ahmeteminkolbasar",
+      "github": "https://github.com/aeminklbsr",
+      "phone": "535 623 94 20",
+      "adress": "İstanbul/Fatih",
+      "mail": "aeminkolbasar@gmail.com"  
+    }
+  ]
+}

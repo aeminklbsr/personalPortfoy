@@ -1,21 +1,195 @@
+/* Modal Arka Plan */
+.custom-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Daha koyu bir opaklık */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050;
+  backdrop-filter: blur(8px); /* Daha yumuşak bulanıklık efekti */
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* Modal İçerik Kutusu */
+.custom-modal-content {
+  background: linear-gradient(to bottom, #ffffff, #f4f4f4); /* Hafif gradient arka plan */
+  width: 90%;
+  max-width: 800px;
+  border-radius: 16px; /* Daha yuvarlak kenarlar */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25); /* Daha belirgin gölge */
+  animation: slideIn 0.5s ease-in-out;
+  overflow: hidden; /* Taşmaları engelle */
+  position: relative;
+}
+
+/* Modal Başlık */
+.custom-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: bisque; /* Mor tonlu arka plan */
+  color: black; /* Beyaz yazı */
+  font-weight: bold;
+  font-size: 20px;
+  border-bottom: 3px solid bisque; /* Daha belirgin bir alt çizgi */
+}
+
+.custom-modal-header h3 {
+  margin: 0;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.close-btn:hover {
+  color: #ff6666;
+  transform: rotate(90deg); /* Döndürme efekti */
+}
+
+/* Modal Gövdesi */
+.custom-modal-body {
+  padding: 20px;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.8;
+  max-height: 500px;
+  overflow-y: auto;
+  word-wrap: break-word;
+  background-color: #fafafa;
+  scrollbar-color: bisque transparent; /* Kaydırma çubuğu rengi */
+  scrollbar-width: thin;
+}
+
+.custom-modal-body::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-modal-body::-webkit-scrollbar-thumb {
+  background-color: #6200ee;
+  border-radius: 4px;
+}
+
+.custom-modal-body::-webkit-scrollbar-thumb:hover {
+  background-color: #3700b3;
+}
+
+/* Modal Altbilgi */
+.custom-modal-footer {
+  padding: 16px;
+  text-align: right;
+  background-color: #f4f4f4;
+  border-top: 1px solid #ddd;
+}
+
+.close-footer-btn {
+  background-color: #6200ee;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.close-footer-btn:hover {
+  background-color: #3700b3;
+}
+
+/* Animasyonlar */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-30px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+
+/*  card */
+
+.container {
+  padding: 20px;
+}
+
 .card {
-    border-radius: 8px;
-    /* Kart köşelerini yuvarla */
-    overflow: hidden;
-    /* Görsellerin dışına taşmasını engelle */
-    position: relative;
-    /* Overlay için gerekli */
-  }
+  position: relative;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
 
-  .card-overlay {
+.card h3 {
+  margin: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
 
-    bottom: 0;
-    /* Görselin en altına yerleştir */
-    width: 100%;
-    /* Görselin genişliğini kapla */
-    color: black;
-    /* Yazıyı beyaz yap */
-    text-align: center;
-    /* Yazıyı ortala */
+.card-footer {
+  background-color: #e9ecef;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: center;
+}
 
-  }
+.card-footer p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.card-footer a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.card-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Başlık */
+.about-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.about-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #007bff;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}

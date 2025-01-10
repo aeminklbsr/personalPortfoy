@@ -22,11 +22,8 @@ html, body {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Hafif gölge ekleme */
     background-color: rgba(255, 255, 255, 0.9); /* Hafif şeffaf arka plan */
     transition: background-color 0.3s ease; /* Geçiş efekti */
-    
-}
+    backdrop-filter: blur(10px); /* Arka plan bulanıklığı */
 
-.navbar-toggler {
-    background-color: white; /* Toggler butonunun arka plan rengini beyaz yap */
 }
 
 /* Navbar Linkler */
@@ -94,3 +91,4 @@ html, body {
 .social-icons .social-link:hover {
     color: #a42526;
 }
+

@@ -1,7 +1,6 @@
 <div class="background-overlay">
   <nav class="navbar navbar-expand-lg bg-light bg-opacity-25">
     <div class="container-fluid">
-      <a class="navbar-brand text-dark" href="#">LOGO</a>
       <!-- Menü -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,45 +26,47 @@
     </div>
   </nav>
   <router-outlet></router-outlet>
-</div>
+  <footer class="footer bg-dark text-white py-4">
+    <div class="container">
+      <div class="row text-center text-md-start">
+        <!-- Logo ve Kısa Açıklama -->
+        <div class="col-md-4 col-12 mb-3">
+          <h5 class="footer-logo">LOGO</h5>
+          <p>Web sitemiz üzerinden projelerimi inceleyebilir ve iletişim kurabilirsiniz.</p>
+        </div>
 
-<footer class="footer bg-dark text-white py-4">
-  <div class="container">
-    <div class="row text-center text-md-start">
-      <!-- Logo ve Kısa Açıklama -->
-      <div class="col-md-4 col-12 mb-3">
-        <h5 class="footer-logo">LOGO</h5>
-        <p>Web sitemiz üzerinden projelerimi inceleyebilir ve iletişim kurabilirsiniz.</p>
+        <!-- Hızlı Linkler -->
+        <div class="col-md-4 col-12 mb-3">
+          <h5>Hızlı Linkler</h5>
+          <ul class="list-unstyled">
+            <li><a routerLink="/home" class="footer-link">Ana Sayfa</a></li>
+            <li><a routerLink="/resume" class="footer-link">Hakkımda</a></li>
+            <li><a routerLink="/project" class="footer-link">Projeler</a></li>
+            <li><a routerLink="/contact" class="footer-link">İletişim</a></li>
+          </ul>
+        </div>
+
+        <!-- Sosyal Medya -->
+        <div class="col-md-4 col-12">
+          <h5>Beni Takip Edin</h5>
+          <div class="d-flex justify-content-center justify-content-md-start">
+            <a href="#" class="social-link me-3"></a>
+            <a href="https://www.instagram.com/aeminklbsr/" class="social-link me-3"><img
+                src="/assets/images/instagram.png" alt=""></a>
+            <a href="https://github.com/aeminklbsr" class="social-link me-3"><img src="/assets/images/github.png"
+                alt=""></a>
+            <a href="https://www.linkedin.com/in/ahmeteminkolbasar" class="social-link me-3"><img
+                src="/assets/images/linkedin.png" alt=""></a>
+          </div>
+        </div>
       </div>
 
-      <!-- Hızlı Linkler -->
-      <div class="col-md-4 col-12 mb-3">
-        <h5>Hızlı Linkler</h5>
-        <ul class="list-unstyled">
-          <li><a href="#" class="footer-link">Ana Sayfa</a></li>
-          <li><a href="#" class="footer-link">Hakkımda</a></li>
-          <li><a href="#" class="footer-link">Projeler</a></li>
-          <li><a href="#" class="footer-link">İletişim</a></li>
-        </ul>
-      </div>
-
-      <!-- Sosyal Medya -->
-      <div class="col-md-4 col-12">
-        <h5>Beni Takip Edin</h5>
-        <div class="d-flex justify-content-center justify-content-md-start">
-          <a href="#" class="social-link me-3"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="social-link me-3"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="social-link me-3"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="social-link me-3"><i class="fab fa-linkedin-in"></i></a>
+      <!-- Alt Bilgi -->
+      <div class="row mt-4">
+        <div class="col text-center">
+          <p class="mb-0">&copy; 2024 Tüm Hakları Saklıdır | Kendi İsminiz</p>
         </div>
       </div>
     </div>
-
-    <!-- Alt Bilgi -->
-    <div class="row mt-4">
-      <div class="col text-center">
-        <p class="mb-0">&copy; 2024 Tüm Hakları Saklıdır | Kendi İsminiz</p>
-      </div>
-    </div>
-  </div>
-</footer>
+  </footer>
+</div>
